@@ -1,0 +1,115 @@
+
+.container {
+    position: relative;
+}
+.Who h2{
+    color: whitesmoke;
+    font-size: 3vw;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.Who h4{
+    color: rgb(180, 178, 178);
+    font-size: 2vw;
+}
+.Who{
+    height: 55vh;
+    width: 30vw;
+    position: absolute;
+    font-family: "Google Sans";
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 5px;
+    border: 1px solid lightseagreen;
+    box-shadow: 5px 5px 5px rgb(3, 131, 173);
+    text-align: center;
+    border-radius: 14px;
+    max-width: 50%;
+    -webkit-user-drag: none;
+}
+.Who img{
+    position: absolute;
+    height: 55vh;
+    width: 30vw;
+    top: 0%;
+    left: -150%;
+    border-radius: 50px;
+    -webkit-user-drag: none;
+    border: 2px solid lightseagreen;
+    box-shadow: 5px 5px 5px rgb(3, 131, 173);
+}
+
+.Who .button {
+    position: absolute;
+    top: 100%; /* Adjust this value as needed */
+    left: 50%; /* Offset to the left */
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 197, 189); /* Blue */
+    font-size: 2em;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.8s;
+    box-shadow: 0 8px 16px rgb(3, 131, 173);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.Who .button:hover {
+    color: black;
+    background-color: #00ffbf; /* Change color on hover */
+    box-shadow: 0 12px 24px rgb(3, 131, 173); /* Increase shadow on hover */
+    transform: translate(-50%, -50%) scale(1.25); /* Slightly increase size on hover */
+}
+@media(max-width: 600px) {
+    .Who{
+        width: 50%;
+        height: 13vh;
+        position: absolute;
+        font-family: "Google Sans";
+        left: 70%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        border: 1px solid lightseagreen;
+        box-shadow: 5px 5px 5px rgb(3, 131, 173);
+        text-align: center;
+        border-radius: 14px;
+        max-width: 50%;
+    }
+    .Who .subject{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Who .button {
+        position: absolute;
+        top: 100%; /* Adjust this value as needed */
+        left: 52%; /* Offset to the left */
+        background-color: rgb(26, 197, 189); /* Blue */
+        font-size: 2.3vw;
+        border: none;
+        color: white;
+        padding: 5px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        transition-duration: 0.6s;
+        border-radius: 50px;
+        box-shadow: 0 8px 16px rgb(3, 131, 173);
+        }
+    .Who img{
+        position: absolute;
+        height: 15vh;
+        width: 30vw;
+        top: 0%;
+        left: -75%;
+        border-radius: 50px;
+        -webkit-user-drag: none;
+    }
+}
