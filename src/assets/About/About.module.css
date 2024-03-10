@@ -1,6 +1,24 @@
 
-.container {
-    position: relative;
+@import url(https://fonts.googleapis.com/css?family=Google+Sans);
+:root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #614444;
+    border: 1px solid #6d6161;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #363636;
 }
 .Who h2{
     color: whitesmoke;
@@ -24,11 +42,11 @@
     border: 1px solid lightseagreen;
     box-shadow: 5px 5px 5px rgb(3, 131, 173);
     text-align: center;
-    border-radius: 14px;
+    border-radius: 50px;
     max-width: 50%;
     -webkit-user-drag: none;
 }
-.Who img{
+.Who .whoImage{
     position: absolute;
     height: 55vh;
     width: 30vw;
@@ -49,6 +67,7 @@
     font-size: 2em;
     color: white;
     padding: 15px 32px;
+    font-family: "Google Sans";
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -65,6 +84,74 @@
     background-color: #00ffbf; /* Change color on hover */
     box-shadow: 0 12px 24px rgb(3, 131, 173); /* Increase shadow on hover */
     transform: translate(-50%, -50%) scale(1.25); /* Slightly increase size on hover */
+}
+.projecttitle{
+    color: white;
+    border: 1px solid lightseagreen;
+    padding: 20px;
+    border-radius: 50px;
+    position: absolute;
+    left: -150%;
+    top: 120%;
+    box-shadow: 5px 5px 5px rgb(3, 131, 172);
+}
+.project1{
+    margin: 0;
+    color: white;
+    border: 1px solid lightseagreen;
+    border-radius: 50px;
+    position: absolute;
+    left: -150%;
+    top: 145%;
+    box-shadow: 5px 5px 5px rgb(3, 131, 172);
+}
+.project1title{
+    margin: 0;
+    margin-left: 10px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    top: 0%;
+    left: 0%;
+    font-size: 3vw;
+}
+.project1 a{
+    text-decoration: none;
+    color: white;
+}
+.project1:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.02);
+}
+.project1desc{
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    top: 0%;
+    left: 0%;
+    font-size: 1.2vw;
+}
+.Who .Project1Image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    top: 5px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.footer {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    margin-top: auto;
+    height: 2.5rem;   /* Footer height */
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    top: 150%;
 }
 @media(max-width: 600px) {
     .Who{
@@ -113,3 +200,4 @@
         -webkit-user-drag: none;
     }
 }
+
