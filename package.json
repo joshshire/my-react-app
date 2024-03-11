@@ -1,5 +1,6 @@
 {
   "name": "my-react-app",
+  "homepage": "https://joshshire.github.io/my-react-app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
