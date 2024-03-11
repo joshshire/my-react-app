@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import styles from './Compodent.module.css'
 import Sidebar from "../Sidebar/Sidebar"
 import Home from "../Home/Home";
+import Footer from "../Footer/Footer";
 function Compodent(){
     // Initialize num from localStorage or set to 0 if not found
     let [num, setnum] = useState(() => Number(localStorage.getItem('num')) || 0)
@@ -43,6 +44,7 @@ function Compodent(){
                 <button className={styles.button} onClick={reset}>Reset</button>
                 <button className={styles.button} onClick={decrement}>Decrement</button>
             </div>
+            <Footer/>
         </div>
     );
 }

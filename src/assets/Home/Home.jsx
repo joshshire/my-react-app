@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import styles from './Home.module.css'
 import navbar from '../Sidebar/Sidebar'
-
+import Footer from '../Footer/Footer';
 function Home() {
     const [color, setColor] = useState(() => String(localStorage.getItem('color') || '#333'));
 
@@ -31,9 +31,10 @@ function Home() {
                     Home Page
                 </h1>
                 <h3>Set Background Color</h3>
-                <input placeholder="Color" className={styles.input} id='text'></input>
+                <input placeholder="Color" className={styles.input} id='text' onChange={clicked}></input>
                 <input type="submit" onClick={clicked}></input>
             </div>
+            <Footer/>
         </div>
     );
 }

@@ -5,6 +5,16 @@
     flex-direction: column;
     min-height: 100vh;
 }
+body {
+    flex: 1 0 auto;
+    padding-bottom: 50px; /* Adjust as needed */
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Adjust as needed */
+}
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -46,12 +56,15 @@
     max-width: 50%;
     -webkit-user-drag: none;
 }
-.Who .whoImage{
+.container{
+    position: relative;
+}
+.whoImage{
     position: absolute;
     height: 55vh;
     width: 30vw;
     top: 0%;
-    left: -150%;
+    left: -45vw;
     border-radius: 50px;
     -webkit-user-drag: none;
     border: 2px solid lightseagreen;
@@ -85,14 +98,17 @@
     box-shadow: 0 12px 24px rgb(3, 131, 173); /* Increase shadow on hover */
     transform: translate(-50%, -50%) scale(1.25); /* Slightly increase size on hover */
 }
-.projecttitle{
-    color: white;
-    border: 1px solid lightseagreen;
-    padding: 20px;
-    border-radius: 50px;
+.projects{
+    width: 15vw;
     position: absolute;
-    left: -150%;
-    top: 120%;
+    top: 85vh;
+    left: 17.5%;
+    font-family: "Google sans";
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid lightseagreen;
+    border-radius: 50px;
     box-shadow: 5px 5px 5px rgb(3, 131, 172);
 }
 .project1{
@@ -101,11 +117,11 @@
     border: 1px solid lightseagreen;
     border-radius: 50px;
     position: absolute;
-    left: -150%;
-    top: 145%;
+    top: 95vh;
+    left: 10.5%;
     box-shadow: 5px 5px 5px rgb(3, 131, 172);
 }
-.project1title{
+.Project1Title{
     margin: 0;
     margin-left: 10px;
     padding: 10px;
@@ -119,11 +135,7 @@
     text-decoration: none;
     color: white;
 }
-.project1:hover {
-    transition-duration: 0.5s;
-    transform: scale(1.02);
-}
-.project1desc{
+.Project1Desc{
     margin: 0;
     margin-right: 10px;
     margin-left: 10px;
@@ -134,24 +146,13 @@
     left: 0%;
     font-size: 1.2vw;
 }
-.Who .Project1Image {
+.Project1Image {
     position: relative;
     width: 100%;
     height: 200px;
     top: 5px;
     border-radius: 50px;
     object-fit: cover;
-}
-.footer {
-    display: block;
-    position: absolute;
-    visibility: hidden;
-    margin-top: auto;
-    height: 2.5rem;   /* Footer height */
-    background-color: #f5f5f5;
-    text-align: center;
-    padding: 10px;
-    top: 150%;
 }
 @media(max-width: 600px) {
     .Who{
@@ -190,14 +191,71 @@
         border-radius: 50px;
         box-shadow: 0 8px 16px rgb(3, 131, 173);
         }
-    .Who img{
+    .Who .whoImage{
         position: absolute;
-        height: 15vh;
+        height: 13vh;
         width: 30vw;
         top: 0%;
         left: -75%;
         border-radius: 50px;
         -webkit-user-drag: none;
     }
+    .projects{
+        width: 75vw;
+        position: absolute;
+        top: 45vh;
+        left: 50%;
+        font-family: "Google sans";
+        color: white;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 1px solid lightseagreen;
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px rgb(3, 131, 172);
+    }
+    .projectTitle{
+        color: white;
+    }
+    .project1{
+        width: 75vw;
+        position: absolute;
+        top: 65vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 1px solid lightseagreen;
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px rgb(3, 131, 172);
+        
+    }
+    .Project1Image{
+        position: relative;
+        display: block;
+        border: 1px solid lightseagreen;
+        border-radius: 50px;
+        height: 10vh;
+        width: 75vw;
+        object-fit: cover;
+    }
+    .project1 a{
+        text-decoration: none;
+    }
+    .Project1Title{
+        color: rgb(255, 255, 255);
+        font-family: "Google Sans";
+    }
+    .Project1Desc{
+        color: white;
+        font-size: 3.5vw;
+        font-family: "Google Sans";
+    }
+    .footer{
+        position: absolute;
+        top: 100%;
+        margin: 1px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
 }
 
