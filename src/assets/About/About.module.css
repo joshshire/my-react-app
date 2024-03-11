@@ -1,20 +1,28 @@
 
 @import url(https://fonts.googleapis.com/css?family=Google+Sans);
-:root{
+.project1{
+    margin-bottom: 10px;
+    position: relative; /* Adjust as needed */
+    display: block;
+    color: white;
+    border: 1px solid lightseagreen;
+    border-radius: 50px;
+    max-width: 30vw;
+    min-width: 30vw;
+    margin-top: 99vh; /* Adjust as needed */
+    margin-left: 10vw;
+    box-shadow: 5px 5px 5px rgb(3, 131, 172);
+}
+
+#container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: left;
+    justify-content: left;
 }
-body {
-    flex: 1 0 auto;
-    padding-bottom: 50px; /* Adjust as needed */
-}
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px; /* Adjust as needed */
-}
+
+
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -30,6 +38,9 @@ body {
     border-radius: 8px;
     background-color: #363636;
 }
+
+/* ... rest of your CSS ... */
+
 .Who h2{
     color: whitesmoke;
     font-size: 3vw;
@@ -56,15 +67,11 @@ body {
     max-width: 50%;
     -webkit-user-drag: none;
 }
-.container{
-    position: relative;
-}
 .whoImage{
-    position: absolute;
-    height: 55vh;
+    position: relative; /* Adjust as needed */
+    margin-top: -50vh; /* Adjust as needed */
     width: 30vw;
-    top: 0%;
-    left: -45vw;
+    margin-left: -90vw;
     border-radius: 50px;
     -webkit-user-drag: none;
     border: 2px solid lightseagreen;
@@ -99,6 +106,7 @@ body {
     transform: translate(-50%, -50%) scale(1.25); /* Slightly increase size on hover */
 }
 .projects{
+    min-width: 15vw;
     width: 15vw;
     position: absolute;
     top: 85vh;
@@ -111,18 +119,10 @@ body {
     border-radius: 50px;
     box-shadow: 5px 5px 5px rgb(3, 131, 172);
 }
-.project1{
-    margin: 0;
-    color: white;
-    border: 1px solid lightseagreen;
-    border-radius: 50px;
-    position: absolute;
-    top: 95vh;
-    left: 10.5%;
-    box-shadow: 5px 5px 5px rgb(3, 131, 172);
+.projectTitle{
+    font-size: 2.5vw;
 }
 .Project1Title{
-    margin: 0;
     margin-left: 10px;
     padding: 10px;
     position: relative;
@@ -136,7 +136,6 @@ body {
     color: white;
 }
 .Project1Desc{
-    margin: 0;
     margin-right: 10px;
     margin-left: 10px;
     padding: 10px;
@@ -149,7 +148,7 @@ body {
 .Project1Image {
     position: relative;
     width: 100%;
-    height: 200px;
+    max-height: 20vh;
     top: 5px;
     border-radius: 50px;
     object-fit: cover;
@@ -191,14 +190,10 @@ body {
         border-radius: 50px;
         box-shadow: 0 8px 16px rgb(3, 131, 173);
         }
-    .Who .whoImage{
-        position: absolute;
-        height: 13vh;
-        width: 30vw;
-        top: 0%;
-        left: -75%;
+    .whoImage{
+        top: 10%;
+        left: 0%;
         border-radius: 50px;
-        -webkit-user-drag: none;
     }
     .projects{
         width: 75vw;
@@ -217,44 +212,38 @@ body {
         color: white;
     }
     .project1{
-        width: 75vw;
-        position: absolute;
-        top: 65vh;
-        left: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
-        border: 1px solid lightseagreen;
-        border-radius: 50px;
-        box-shadow: 5px 5px 5px rgb(3, 131, 172);
-        
-    }
-    .Project1Image{
-        position: relative;
+        justify-content: center;
+        margin: 0;
         display: block;
-        border: 1px solid lightseagreen;
-        border-radius: 50px;
-        height: 10vh;
-        width: 75vw;
-        object-fit: cover;
+        position: absolute;
+        top: 72% ;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        min-width: 50vw;
     }
+    /* .container{
+        max-width: none;
+    } */
     .project1 a{
         text-decoration: none;
     }
     .Project1Title{
+        display: block;
         color: rgb(255, 255, 255);
         font-family: "Google Sans";
+        text-align: center;
+        margin: 0;
     }
     .Project1Desc{
+        margin: 0;
+        display: block;
         color: white;
-        font-size: 3.5vw;
+        font-size: 2.5vw;
         font-family: "Google Sans";
     }
     .footer{
-        position: absolute;
-        top: 100%;
-        margin: 1px;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        visibility: hidden;
     }
     
 }
