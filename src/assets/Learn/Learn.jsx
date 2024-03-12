@@ -1,25 +1,18 @@
 import Sidebar from "../Sidebar/Sidebar"
 import { useState } from "react";
+import style from './Learn.module.css'
 function Learn(){
     const [name, setname] = useState('');
-    function HandleNameChange(event){
-        setname(event.target.value)
-        if(event.target.value == 'Josh'){
-            let para = document.createElement('P')
-            let node = document.createTextNode('Hello ')
-            para.appendChild(node)
-        } else{
-            console.log('Rich')
-        }
-    }
     return(
 
         <div>
             <Sidebar/>
-            <h1>Name</h1>
-            <h1>Name: {name}</h1>
-            <input id='name' onChange={HandleNameChange}></input>
-        </div>
+            <div class="container">
+                <div class={style.item} id={style.item1}>Item 1</div>
+                <div class={style.item}>Item 2</div>
+                <div class={style.item}>Item 3</div>
+            </div>
+            </div>
     );
 }
 export default Learn
